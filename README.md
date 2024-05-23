@@ -2,10 +2,18 @@
 A git repositories for the website in my capstone project
 
 ## TODO
+Initial Phase: Preparing the repository
 [x] Create a git repositories for the website
-[ ] Share the repos with Zachary Chin
+[x] Share the repos with Zachary Chin
 [ ] Create a development branch to protect the main branch
-[ ] Create the template for home page of the website
+[x] Create the template for home page of the website
+Second Phase: Working on the file
+[ ] Add a navbar to the template file
+[ ] Add a footer to the template file
+[ ] Create an index page
+[ ] Create a About Us page
+[ ] Create a Contact Us page
+[ ] Create a Product lisitng page
 
 ## Introduction
 
