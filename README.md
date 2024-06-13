@@ -17,7 +17,7 @@ Second Phase: Laying out the site structure
 
 Third Phase: Adding content to the files
 - [ ] Adding content to the index page
-    - [ ] photo
+    - [x] photo
     - [ ] video
 - [ ] Adding content to the Contact page
 - [ ] Adding content to the About page
