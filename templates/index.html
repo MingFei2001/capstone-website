@@ -72,7 +72,24 @@
         <p class="text-center lead my-4">A place to go</p>
         <!--End of Carousel-->
 
-        
+        <!--List of travel plan-->
+        <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Plans</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in plan %}
+                    <tr>
+                        <th scope="row">{{ item['ID'] }}</th>
+                        <td>{{ item['PLANS'] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <!--End of list-->
     
     </div>
 
