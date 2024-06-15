@@ -1,51 +1,57 @@
 # Capstone Website
-A git repositories for the website in my capstone project
+This repository showcases a sample implementation for a core section of the EcoTravel website. It leverages the power of Flask to create a dynamic web application that promotes eco-conscious travel experiences.
 
-## TODO
-Initial Phase: Preparing the repository
-- [x] Create a git repositories for the website
-- [x] Share the repos with Zachary Chin
-- [x] Create the template for home page of the website
+## Introduction: Embrace Eco-conscious Travel
+EcoTravel is a passionate advocate for responsible tourism practices. We believe in exploring the world's wonders while minimizing our impact on the environment and supporting local communities. This website is a core component of our online presence, allowing users to discover breathtaking eco-destinations and plan their dream sustainable adventures.
 
-Second Phase: Laying out the site structure
-- [x] Add a navbar to the template file
-- [x] Add a footer to the template file
-- [x] Create an index page
-- [x] Create a About page
-- [x] Create a Contact page
-- [x] Create a Product lisitng page
+above is the business case for the project
 
-Third Phase: Adding content to the files
-- [ ] Adding content to the index page
-    - [x] photo
-    - [ ] video
-- [ ] Adding content to the Contact page
-- [ ] Adding content to the About page
-- [ ] Adding content to the Product Listing page
+## Getting Started
 
-Fourth Phase: Integrating Functions
-- [ ] Adding javascipt function to pull public API to the page
+1. Clone the Repository:
+```bash
+git clone https://github.com/MingFei2001/capstone-website.git
+```
 
-## Introduction
-The capstone project requires a website used to promote the business in our business case.
+2. Install Dependencies:
 
-Here is the website structure:
-1. Homepage - index.html
-2. Contact - Contact.html
-3. About - About.html
-4. Listing - listing.html
+This project relies on several Python libraries to function. You can install them using the provided `requirements.txt` file:
+```bash
+cd capstone-website
+pip install -r requirements.txt
+```
 
-Here is the component needed for the business infrastructure:
-1. Web Server
-2. Database
-3. Media Hosting
-4. Networking (not in this repo)
-5. Security (not in this repo)
+3. Run the Application:
+```bash
+python3 app.py
+# python app.py on windows
+```
 
-## Point of focus
-1. The website should be simple and straightforward
-    - for easier management and maintainance
-2. The backend should be linux based and tools should be available in most linux distro
-    - for easier configuration and maintainance
-3. The ideal page numbers should not be more than 5 webpages
-    - best to be 1 or 2 pages only
+Open http://127.0.0.1:5000/ in your web browser to view the application.
+
+## Project Structure
+
+```
+capstone-website/
+├── app.py              # main Flask application
+├── schema.sql          # schema file for database definition
+├── database.db          # SQLite database file
+├── static/             # Folder for static assets
+    └── images
+    └── bootstrap
+        └── css
+        └── js
+├── templates           # HTML templates
+    └── index.html
+    └── template.html
+├── requirements.txt    # File listing project dependencies
+```
+
+## Future of this project
+The EcoTravel codebase is a springboard for a robust web application. To reach a wider audience and ensure a seamless user experience, migrating to the cloud with Amazon Web Services (AWS) is the next step.
+
+AWS empowers EcoTravel with:
+- Scalability: Seamlessly handle surges in user traffic with AWS's on-demand resources.
+- Reliability: Minimize downtime and ensure consistent service with AWS's robust infrastructure.
+- Cost-Effectiveness: Pay only for the services you use with AWS's pay-as-you-go model.
+- Security: Benefit from AWS's comprehensive security features to safeguard user data.
