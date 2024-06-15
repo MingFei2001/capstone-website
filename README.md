@@ -55,3 +55,8 @@ AWS empowers EcoTravel with:
 - Reliability: Minimize downtime and ensure consistent service with AWS's robust infrastructure.
 - Cost-Effectiveness: Pay only for the services you use with AWS's pay-as-you-go model.
 - Security: Benefit from AWS's comprehensive security features to safeguard user data.
+
+---
+
+## License
+This project is licensed under the MIT License (see LICENSE file for details).
