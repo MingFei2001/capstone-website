@@ -63,7 +63,7 @@ capstone-website/
 ├── templates           # HTML templates
     └── index.html
     └── template.html
-├── LICENSE           # License file
+├── LICENSE             # License file
 ```
 
 ---
