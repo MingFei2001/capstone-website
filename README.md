@@ -66,15 +66,6 @@ capstone-website/
 ├── LICENSE           # License file
 ```
 
-## Future of this project
-The EcoTravel codebase is a springboard for a robust web application. To reach a wider audience and ensure a seamless user experience, migrating to the cloud with Amazon Web Services (AWS) is the next step.
-
-AWS empowers EcoTravel with:
-- Scalability: Seamlessly handle surges in user traffic with AWS's on-demand resources.
-- Reliability: Minimize downtime and ensure consistent service with AWS's robust infrastructure.
-- Cost-Effectiveness: Pay only for the services you use with AWS's pay-as-you-go model.
-- Security: Benefit from AWS's comprehensive security features to safeguard user data.
-
 ---
 
 ## License
