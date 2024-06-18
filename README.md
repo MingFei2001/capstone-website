@@ -1,10 +1,19 @@
 # Capstone Website
-This repository showcases a sample implementation for a core section of the EcoTravel website. It leverages the power of Flask to create a dynamic web application that promotes eco-conscious travel experiences.
+This repository showcases a sample implementation for a core section of the EcoTravel website. It leverages the power of Python Flask to create a dynamic web application that promotes eco-conscious travel experiences.
 
 ## Introduction: Embrace Eco-conscious Travel
-EcoTravel is a passionate advocate for responsible tourism practices. We believe in exploring the world's wonders while minimizing our impact on the environment and supporting local communities. This website is a core component of our online presence, allowing users to discover breathtaking eco-destinations and plan their dream sustainable adventures.
+> EcoTravel is a passionate advocate for responsible tourism practices. We believe in exploring the world's wonders while minimizing our impact on the environment and supporting local communities. This website is a core component of our online presence, allowing users to discover breathtaking eco-destinations and plan their dream sustainable adventures.
 
-above is the business case for the project
+Above is the business case for the project. The main goal here is to create a website simulating the situation EcoTravel is in.
+
+Their setup have several issues including:
+- low availability: Users may encounter downtime or slow performance due to limited resources
+- not scalable: The website struggles to handle spikes in user traffic, hindering our reach.
+- not secure: Existing security measures might not be robust enough to protect user data effectively.
+- not redundant: A single point of failure could potentially take the entire website offline.
+- Manual Troubleshooting: Resolving issues often requires manual intervention, leading to delays and inefficiencies.
+
+Migration to AWS will be the key to overcome these limitation and build a robust online platfrom.
 
 ## Getting Started
 
@@ -14,17 +23,29 @@ git clone https://github.com/MingFei2001/capstone-website.git
 ```
 
 2. Install Dependencies:
-
-This project relies on several Python libraries to function. You can install them using the provided `requirements.txt` file:
 ```bash
 cd capstone-website
-pip install -r requirements.txt
+
+# On Windows
+pip install flask flask-mysqldb # install the dependencies system-wide
+# Make sure you have setup a MySQL server
+
+# On Debian or its derivatives (ubuntu)
+sudo apt install python3-virtualenv # install virtual environment package
+virtualenv pyenv # create a folder to store the env package
+pip install flask flask-mysqldb MySQL # install the dependencies
+# Make sure you have setup a MySQL server
 ```
 
 3. Run the Application:
+> please make sure you already have a MySQL server setup on your machine
+
 ```bash
+# On Debian or its derivatives (ubuntu)
 python3 app.py
-# python app.py on windows
+
+# On Windows
+python app.py
 ```
 
 Open http://127.0.0.1:5000/ in your web browser to view the application.
@@ -34,8 +55,6 @@ Open http://127.0.0.1:5000/ in your web browser to view the application.
 ```
 capstone-website/
 ├── app.py              # main Flask application
-├── schema.sql          # schema file for database definition
-├── database.db          # SQLite database file
 ├── static/             # Folder for static assets
     └── images
     └── bootstrap
@@ -44,7 +63,7 @@ capstone-website/
 ├── templates           # HTML templates
     └── index.html
     └── template.html
-├── requirements.txt    # File listing project dependencies
+├── LICENSE           # License file
 ```
 
 ## Future of this project
