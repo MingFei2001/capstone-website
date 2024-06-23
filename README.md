@@ -47,11 +47,11 @@ pip install flask flask_mysqldb MySQL # install the dependencies
 > please make sure you already have a MySQL server setup on your machine
 
 ```bash
-# On Debian or its derivatives (ubuntu)
-python3 app.py
+# for production mode
+flask run
 
-# On Windows
-python app.py
+# for debug mode
+python3 app.py
 ```
 
 Open http://127.0.0.1:5000/ in your web browser to view the application.
