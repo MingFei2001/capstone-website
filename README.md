@@ -36,8 +36,10 @@ pip install flask flask-mysqldb # install the dependencies system-wide
 
 # On Debian or its derivatives (ubuntu)
 sudo apt install python3-virtualenv # install virtual environment package
+sudo apt install python-dev default-libmysqlclient-dev libssl-dev # install build dependencies
 virtualenv pyenv # create a folder to store the env package
-pip install flask flask-mysqldb MySQL # install the dependencies
+source pyenv/bin/activate
+pip install flask flask_mysqldb MySQL # install the dependencies
 # Make sure you have setup a MySQL server
 ```
 

@@ -33,13 +33,14 @@ mysql = MySQL(app)
 
 @app.route('/')
 def home():
+    ## sqlite connection
     # conn = get_db_connection()
     # plan = conn.execute('SELECT * FROM plan').fetchall() 
     # conn.close()
     cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
     cursor.execute('SELECT * FROM plans;')
     plan = cursor.fetchall()
-    return render_template('index.html', plan=plan)
+    return render_template('index.html') #, plan=plan)
 
 @app.route('/about')
 def about():
