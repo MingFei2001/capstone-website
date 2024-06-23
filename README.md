@@ -10,7 +10,7 @@ Their setup have several issues including:
 - **Low Availability**: Users may encounter downtime or slow performance due to limited resources
 - **Not Scalable**: The website struggles to handle spikes in user traffic, hindering our reach.
 - **Not Secure**: Existing security measures might not be robust enough to protect user data effectively.
-- **Not Redundan*t*: A single point of failure could potentially take the entire website offline.
+- **Not Redundant**: A single point of failure could potentially take the entire website offline.
 - **Manual Troubleshooting**: Resolving issues often requires manual intervention, leading to delays and inefficiencies.
 
 Migration to AWS will be the key to overcome these limitation and build a robust online platfrom.
