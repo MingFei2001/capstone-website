@@ -19,8 +19,19 @@ pip install flask gunicorn
 
 echo "| Starting service now ..."
 
-gunicorn -b localhost:8000 app-bk:app &
+# gunicorn -b localhost:8000 app-bk:app &
 # gunicorn -b localhost:8000 app:app
 
-echo "| Service terminated"
+sudo cp ./flask-app.service /etc/systemd/system/flask-app.service
+sudo systemctl daemon-reload
+sudo systemctl start flask-app.service
+sudo systemctl enable flask-app.service
+
+echo "| Setting up Nginx ..."
+
+sudo apt install nginx
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+echo "| Init completed ..."
 echo "| Program exiting ..."

@@ -1,0 +1,11 @@
+[Unit]
+Description=Gunicorn instance for a simple hello world app
+After=network.target
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/capstone-website
+ExecStart=/home/ubuntu/capstone-website/venv/bin/gunicorn -b localhost:8000 app-bk:app
+Restart=always
+[Install]
+WantedBy=multi-user.target
