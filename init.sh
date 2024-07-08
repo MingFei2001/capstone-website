@@ -9,11 +9,11 @@ echo "| Initiating virtual environment ..."
 
 virtualenv pyenv
 source ./pyenv/bin/activate
-pip install flask flask_mysqldb sqlite3 MySQL-python
+pip install flask flask_mysqldb sqlite3 MySQL-python gunicorn
 
 echo "| Starting service now ..."
 
-flask run
+gunicorn -b localhost:8000 app-bk:app
 
 echo "| Service terminated"
 echo "| Program exiting ..."
