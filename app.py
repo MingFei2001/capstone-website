@@ -9,6 +9,7 @@ app = Flask(__name__, static_folder='static')
 
 ################################################################
 
+## sqlite connection
 # Creating the database for testing purposes
 connection = sqlite3.connect('database.db')
 with open('schema.sql') as f:
@@ -23,13 +24,15 @@ def get_db_connection():
 
 ################################################################
 
+## MySQL config
 #app.config['MYSQL_HOST'] = 'localhost'
 #app.config['MYSQL_USER'] = 'root'
 #app.config['MYSQL_PASSWORD'] = 'Password@123'
 #app.config['MYSQL_DB'] = 'capstone'
 
-# mysql = MySQL(app)
+#mysql = MySQL(app)
 
+################################################################
 
 @app.route('/')
 def home():
@@ -37,6 +40,7 @@ def home():
    conn = get_db_connection()
    data = conn.execute('SELECT * FROM plans').fetchall() 
    conn.close()
+   ## MySQL connection
    #cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
    #cursor.execute('SELECT * FROM plans;')
    #data = cursor.fetchall()
