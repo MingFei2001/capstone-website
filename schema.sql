@@ -3,4 +3,8 @@ DROP TABLE IF EXISTS plans;
 CREATE TABLE plans (
 	id INTEGER PRIMARY KEY AUTOINCREMENT,
 	plan TEXT NOT NULL
-)
+);
+
+INSERT INTO plans (plan) VALUES 
+('Siberia'),
+('Moscow');
