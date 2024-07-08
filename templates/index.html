@@ -86,10 +86,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {% for item in plan %}
+                    {% for item in data %}
                     <tr>
                         <th scope="row">{{ item['id'] }}</th>
-                        <td>{{ item['plan-name'] }}</td>
+                        <td>{{ item['plan'] }}</td>
                     </tr>
                     {% endfor %}
                 </tbody>
