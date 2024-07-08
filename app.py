@@ -19,7 +19,7 @@ app = Flask(__name__, static_folder='static')
 # def get_db_connection():
     # conn = sqlite3.connect('database.db')
     # conn.row_factory = sqlite3.Row
-    #return conn
+    # return conn
 
 ################################################################
 
@@ -37,10 +37,10 @@ def home():
     # conn = get_db_connection()
     # plan = conn.execute('SELECT * FROM plan').fetchall() 
     # conn.close()
-    cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-    cursor.execute('SELECT * FROM plans;')
-    plan = cursor.fetchall()
-    return render_template('index.html') #, plan=plan)
+   cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
+   cursor.execute('SELECT * FROM plans;')
+   plan = cursor.fetchall()
+   return render_template('index.html' , plan=plan)
 
 @app.route('/about')
 def about():
