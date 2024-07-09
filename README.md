@@ -35,12 +35,19 @@ pip install flask flask-mysqldb # install the dependencies system-wide
 # Make sure you have setup a MySQL server
 
 # On Debian or its derivatives (ubuntu)
-sudo apt install python3-virtualenv # install virtual environment package
-sudo apt install python-dev default-libmysqlclient-dev libssl-dev # install build dependencies
-virtualenv pyenv # create a folder to store the env package
-source pyenv/bin/activate
-pip install flask flask_mysqldb MySQL # install the dependencies
-# Make sure you have setup a MySQL server
+sudo apt-get update
+sudo apt-get install python3 python3-pip python3-virtualenv python3-dev
+sudo apt-get install default-libmysqlclient-dev build-essential pkg-config
+sudo apt install mysql-server
+
+virtualenv pyenv
+source ./pyenv/bin/activate
+
+pip install mysqlclient
+pip install flask_mysqldb
+pip install flask gunicorn
+
+gunicorn -b localhost:8000 app:app &
 ```
 
 3. Run the Application:
@@ -54,7 +61,7 @@ flask run
 python3 app.py
 ```
 
-Open http://127.0.0.1:5000/ in your web browser to view the application.
+Open http://127.0.0.1:8000/ in your web browser to view the application.
 
 ## Project Structure
 
